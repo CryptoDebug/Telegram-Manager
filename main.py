@@ -5,12 +5,9 @@ from telethon import TelegramClient, events, sync, Button
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.errors import UserAlreadyParticipantError, ChannelPrivateError, FloodWaitError, RPCError, SecurityError
 from colorama import init, Fore, Style
+from config import api_id, api_hash, phone_number
 
 init()
-
-api_id = ''
-api_hash = ''
-phone_number = ''
 
 client = TelegramClient('session_name', api_id, api_hash)
 
